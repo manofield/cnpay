@@ -1,0 +1,19 @@
+{
+    "name": "manofield/cnpay",
+    "description": "the uniform payment",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "li ruiyan",
+            "email": "canbetter@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload" : {
+        "psr-4": {
+            "manofield\\cnpay":"src/"
+        }
+    }
+}
