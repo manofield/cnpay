@@ -22,7 +22,7 @@ class PaymentConfig
         return Array();
     }
 
-    public function with(string $key,$value)
+    public function with($key,$value)
     {
         $this->order.=sprintf("<%s>%s</%s>",$key,$value,$key);
         return $this;

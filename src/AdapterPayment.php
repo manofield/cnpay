@@ -11,13 +11,12 @@ namespace manofield\cnpay;
  */
 interface AdapterPayment
 {
-    public function orderid(string $orderid);
-    public function money(float $money);
-    public function subject(string $name);
-    public function notifyurl(string $url);
-    public function callbackurl(string $url);
-    public function merchanturl(string $url);
-    public function description(string $content);
+    public function orderid($orderid);
+    public function money($money);
+    public function subject($name);
+    public function notifyurl($url);
+    public function callbackurl($url);
+    public function merchanturl($url);
     public function qrcode();
     public function display($capture=false);
 }
