@@ -1,16 +1,15 @@
 <?php
 namespace manofield\cnpay\adapter;
 use manofield\cnpay\AdapterPayment;
-use manofield\cnpay\PaymentConfig;
-use manofield\cnpay\PayException;
-
+use manofield\cnpay\PaymentManager;
+use manofield\cnpay\PaymentException;
 class AlipayAdapter implements AdapterPayment
 {
     private $config;
-    public function __construct(PaymentConfig $config){
-        $this->config=$config;
+    public function __construct(PaymentManager $mgr){
+        $this->config=$mgr;
         if(!$this->config){
-            throw new PayException('Not find the configration of alipay');
+            throw new PaymentException('Not find the configration of alipay');
         }
     }
        
